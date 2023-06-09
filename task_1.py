@@ -58,20 +58,15 @@ try:
     min_ind = user_list.index(min_value)
     max_ind = user_list.index(max_value)
 
-
-    for i in user_list:
-        if user_list.index(i) < min_ind and user_list.index(i) > max_ind:
-            list_2 = []
-            list_2.append(i)
-        elif user_list.index(i) < max_ind and user_list.index(i) > min_ind:
-            list_2 = []
-            list_2.append(i)
+    if min_ind < max_ind:
+        print(user_list[min_ind:max_ind])
+    else:
+        print(user_list[max_ind + 1:min_ind])
 
     print(f"Sum of minus number: {minus_num}")
     print(f"Sum of even number: {even_num}")
     print(f"Sum of odd number: {odd_num} ")
     print(f"The product of elements with an index divisible by three: {prod_three}")
-    print(f"Numbers between max and min: {list_2}")
 
 except ValueError as error:
     print(error)
