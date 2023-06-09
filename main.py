@@ -260,10 +260,10 @@ numbers = [3, 1, 4, 2, 5]
 # revert_to_nums = result.split(",")
 # print(revert_to_nums)
 
-text = "one, two three, four"
-result = text.split()
-print(text)
-print(result)
-result = text.split(", ")
-print(result)
+# text = "one, two three, four"
+# result = text.split()
+# print(text)
+# print(result)
+# result = text.split(", ")
+# print(result)
 
