@@ -59,10 +59,10 @@
 #     numbers.append(random.randint(1, 10))
 # #
 # print(numbers)
-
+#
 # for i in range(NUMS_SIZE):
 #     print(numbers[i])
-
+#
 # # append(item): добавляет элемент item в конец списка
 #
 # numbers.append(2222)
@@ -82,9 +82,9 @@
 # numbers += [1, 2, 3, 4]
 # print(numbers)
 #
-# # remove(item): удаляет элемент item. Удаляется только первое вхождение элемента.
-# # Если элемент не найден, генерирует исключение ValueError
-#
+# remove(item): удаляет элемент item. Удаляется только первое вхождение элемента.
+# Если элемент не найден, генерирует исключение ValueError
+
 # numbers.remove(2222)
 # print(numbers)
 #
@@ -119,10 +119,10 @@
 # sorted(list, [key]): возвращает отсортированный список
 
 # v1
-# numbers.sort()
+# numbers.sort() # этот метод возвращает отсортированный оригинал
 # print(numbers)
 # v2
-# numbers_sorted = sorted(numbers)
+# numbers_sorted = sorted(numbers) # этот метод возвращает отсортированную копию
 # print(numbers_sorted)
 # print(numbers)
 
@@ -130,7 +130,7 @@
 # # v1
 # # people.sort()
 # # print(people)
-# # v2
+# # # v2
 # # people.sort(key=str.lower)
 # # print(people)
 # ##
@@ -177,18 +177,18 @@
 # поменять местами минимальное значение с максимальным
 # [3, 1, 4, 2, 5] -> [3, 5, 4, 2, 1]
 
-# numbers = [3, 1, 4, 2, 5]
-
+numbers = [3, 1, 4, 2, 5]
+#
 # min_value = min(numbers)
 # max_value = max(numbers)
-#
-# # v1
+# #
+# # # v1
 # min_value_index = numbers.index(min_value)
 # max_value_index = numbers.index(max_value)
 # #
 # numbers[min_value_index] = max_value
 # numbers[max_value_index] = min_value
-#
+# #
 # print(numbers)
 
 # v2
@@ -209,15 +209,15 @@
 #     [1, 4, 5],
 #     [11, 42, 55],
 # ]
-#
-# # print(matrix)
-# # print(matrix[1])
-# # print(matrix[0][1])
+
+# print(matrix)
+# print(matrix[1])
+# print(matrix[0][1])
 # #
 # for row in matrix:
 #     for number in row:
 #         print(number, end=" ")
-#     print()
+#     print() # Благодаря этому принту, каждый следующий подсписок выводится с новой строки
 
 ##########
 # import random
@@ -234,9 +234,9 @@
 #         matrix[i].append(random.randint(START, END))
 #
 # print(matrix)
-# #
-# # v1
-# # print(len(matrix))
+# # #
+# # # v1
+# print(len(matrix))
 # print()
 #
 # for i in range(len(matrix)):
@@ -245,7 +245,7 @@
 #     print()
 #
 # print()
-# # v2
+# # # v2
 # for row in matrix:
 #     for number in row:
 #         print(number, end=" ")
@@ -259,10 +259,11 @@
 # #
 # revert_to_nums = result.split(",")
 # print(revert_to_nums)
-#
-# text = "one, two three, four"
-# result = text.split()
-# print(result)
-# result = text.split(", ")
-# print(result)
+
+text = "one, two three, four"
+result = text.split()
+print(text)
+print(result)
+result = text.split(", ")
+print(result)
 
